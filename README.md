@@ -54,6 +54,21 @@ for us to build exactly that.
 
 ```
 
+```clojure
+(def $body ($ :body))
+
+(append $body "<p>Hello jayq!</p>")
+
+```
+
+equals
+
+```javascript
+$("body").append("<p>Hello jQuery</p>");
+
+```
+
+
 ## Changelog
 
 See [CHANGELOG.md](https://github.com/ibdknox/jayq/blob/master/CHANGELOG.md)
